@@ -7,15 +7,7 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
 
 import {
   Colors,
@@ -27,7 +19,7 @@ import {
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
-const Section = ({children, title}: {title: string, children?: React.ReactNode}) => {
+const Section = ({ children, title }: { title: string; children?: React.ReactNode }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -66,16 +58,16 @@ const App = () => {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+      <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
         <Header />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            <Text>Edit</Text><Text style={styles.highlight}>App.js</Text><Text>to change this</Text>
+            <Text>Edit</Text>
+            <Text style={styles.highlight}>App.js</Text>
+            <Text>to change this</Text>
             <Text>screen and then come back to see your edits.</Text>
           </Section>
           <Section title="See Your Changes">
