@@ -6,8 +6,8 @@
  * @flow strict-local
  */
 
-import React from "react";
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from "react-native";
+import React from 'react';
+import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
 
 import {
   Colors,
@@ -15,12 +15,12 @@ import {
   Header,
   LearnMoreLinks,
   ReloadInstructions,
-} from "react-native/Libraries/NewAppScreen";
+} from 'react-native/Libraries/NewAppScreen';
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
 const Section = ({ children, title }: { title: string; children?: React.ReactNode }) => {
-  const isDarkMode = useColorScheme() === "dark";
+  const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
       <Text
@@ -46,7 +46,7 @@ const Section = ({ children, title }: { title: string; children?: React.ReactNod
 };
 
 const App = () => {
-  const isDarkMode = useColorScheme() === "dark";
+  const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -55,7 +55,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
-        barStyle={isDarkMode ? "light-content" : "dark-content"}
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
@@ -93,16 +93,15 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontWeight: "600",
+    fontWeight: '600',
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
-    fontWeight: "400",
+    fontWeight: '400',
   },
   highlight: {
-    fontWeight: "700",
+    fontWeight: '700',
   },
 });
-
 export default App;
