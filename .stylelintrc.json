@@ -1,0 +1,25 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-styled-components"],
+  "processors": ["stylelint-processor-styled-components"],
+  "rules": {
+    "block-no-empty": null,
+    "color-hex-length": "long",
+    "declaration-colon-newline-after": null,
+    "value-keyword-case": ["lower", { "ignoreKeywords": ["dummyValue"] }],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "padding-vertical",
+          "padding-horizontal",
+          "margin-vertical",
+          "margin-horizontal",
+          "shadow-color",
+          "shadow-offset",
+          "shadow-radius",
+          "shadow-opacity"
+        ]
+      }
+    ]
+  }
+}

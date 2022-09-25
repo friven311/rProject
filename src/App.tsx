@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
-
+import * as S from './styled';
 import {
   Colors,
   DebugInstructions,
@@ -22,7 +22,7 @@ import {
 const Section = ({ children, title }: { title: string; children?: React.ReactNode }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View style={styles.sectionContainer}>
+    <S.Wrapper>
       <Text
         style={[
           styles.sectionTitle,
@@ -41,7 +41,7 @@ const Section = ({ children, title }: { title: string; children?: React.ReactNod
         ]}>
         {children}
       </Text>
-    </View>
+    </S.Wrapper>
   );
 };
 
@@ -87,10 +87,6 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
