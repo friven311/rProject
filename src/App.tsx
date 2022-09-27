@@ -25,9 +25,12 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
- * LTI update could not be added via codemod */
-const Section = ({children, title}: {title: string, children?: React.ReactNode}) => {
+type SectionProps = {
+  children?: React.ReactNode;
+  title: string;
+};
+
+const Section = ({children, title}: SectionProps) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -75,7 +78,9 @@ const App = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            <Text>Edit</Text><Text style={styles.highlight}>App.js</Text><Text>to change this</Text>
+            <Text>Edit</Text>
+            <Text style={styles.highlight}>App.js</Text>
+            <Text>to change this</Text>
             <Text>screen and then come back to see your edits.</Text>
           </Section>
           <Section title="See Your Changes">
