@@ -7,7 +7,6 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -26,9 +25,12 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
- * LTI update could not be added via codemod */
-const Section = ({children, title}): Node => {
+type SectionProps = {
+  children?: React.ReactNode;
+  title: string;
+};
+
+const Section = ({children, title}: SectionProps) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -54,7 +56,7 @@ const Section = ({children, title}): Node => {
   );
 };
 
-const App: () => Node = () => {
+const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -76,8 +78,10 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
+            <Text>Edit</Text>
+            <Text style={styles.highlight}>App.js</Text>
+            <Text>to change this</Text>
+            <Text>screen and then come back to see your edits.</Text>
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
@@ -86,7 +90,7 @@ const App: () => Node = () => {
             <DebugInstructions />
           </Section>
           <Section title="Learn More">
-            Read the docs to discover what to do next:
+            <Text>Read the docs to discover what to do next:</Text>
           </Section>
           <LearnMoreLinks />
         </View>
