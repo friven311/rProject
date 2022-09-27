@@ -21,7 +21,6 @@ import {
  * LTI update could not be added via codemod */
 const Section = ({ children, title }: { title: string; children?: React.ReactNode }) => {
   const isDarkMode = useColorScheme() === 'dark';
-  const a = 1;
   return (
     <S.Wrapper>
       <Text

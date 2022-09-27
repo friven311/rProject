@@ -51,7 +51,6 @@
     "preset": "react-native"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,json}": "prettier --write",
     "src/**/*.{ts,tsx,json}": "eslint"
   }
 }
