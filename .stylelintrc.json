@@ -1,15 +1,12 @@
 {
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-styled-components"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-styled-components"],
   "processors": ["stylelint-processor-styled-components"],
   "rules": {
     "string-quotes": "single",
     "block-no-empty": null,
     "color-hex-length": "long",
     "declaration-colon-newline-after": null,
-    "value-keyword-case": ["lower", { "ignoreKeywords": ["dummyValue"] }],
+    "value-keyword-case": ["lower", {"ignoreKeywords": ["dummyValue"]}],
     "property-no-unknown": [
       true,
       {

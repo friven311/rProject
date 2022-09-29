@@ -5,12 +5,12 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --cache",
+    "prepare": "husky install",
+    "prettier": "prettier",
     "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write src/**/*.{ts,tsx}",
-    "lint:styles": "stylelint \"src/**/styled.{ts,tsx}\"",
-    "prepare": "husky install"
+    "stylelint": "stylelint \"src/**/*.{css,js,jsx,ts,tsx}\" --cache",
+    "test": "jest"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",

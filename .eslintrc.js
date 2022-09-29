@@ -21,12 +21,7 @@ module.exports = {
       tsx: true,
     },
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'react-native',
-    'react-native-globals',
-  ],
+  plugins: ['react', '@typescript-eslint', 'react-native', 'react-native-globals'],
   rules: {
     'arrow-body-style': 0,
     'react/function-component-definition': [
@@ -36,10 +31,7 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
-    'react/jsx-filename-extension': [
-      2,
-      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-    ],
+    'react/jsx-filename-extension': [2, {extensions: ['.js', '.jsx', '.ts', '.tsx']}],
   },
   settings: {
     'import/resolver': {
