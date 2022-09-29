@@ -49,17 +49,6 @@
     "stylelint-config-standard": "^28.0.0",
     "typescript": "^4.8.4"
   },
-  "jest": {
-  "preset": "react-native",
-  "moduleFileExtensions": [
-    "ts",
-    "tsx",
-    "js",
-    "jsx",
-    "json",
-    "node"
-    ]
-  },
   "lint-staged": {
     "src/**/*.{ts,tsx,json}": "eslint"
   }
