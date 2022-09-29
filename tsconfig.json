@@ -8,6 +8,7 @@
     "paths": {
       "*": ["src/*"]
     },
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["jest", "styled-components-react-native"]
   }
 }

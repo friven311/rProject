@@ -2,36 +2,37 @@ module.exports = {
   env: {
     es2021: true,
     node: true,
-    'react-native-globals/all': true,
+    jest: true,
+    'react-native/react-native': true,
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    '@react-native-community',
     'airbnb',
     'airbnb/hooks',
+    'airbnb-typescript',
+    'prettier',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    ecmaFeatures: {
-      tsx: true,
-    },
+    project: ['./tsconfig.json'],
+    tsconfigRootDir: __dirname,
   },
-  plugins: ['react', '@typescript-eslint', 'react-native', 'react-native-globals'],
+  plugins: ['react', '@typescript-eslint', 'react-native'],
+  root: true,
   rules: {
-    'arrow-body-style': 0,
+    // Enforce arrow functions for function components: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
     'react/function-component-definition': [
-      2,
+      'error',
       {
         namedComponents: 'arrow-function',
         unnamedComponents: 'arrow-function',
       },
     ],
-    'react/jsx-filename-extension': [2, {extensions: ['.js', '.jsx', '.ts', '.tsx']}],
   },
   settings: {
     'import/resolver': {
