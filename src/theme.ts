@@ -5,7 +5,7 @@ const lightTheme: DefaultTheme = {
     primaryblack: '#000000',
     primarywhite: '#ffffff',
     primarygrey: '#3940f9',
-    lightgrey: '#F2F2F2',
+    lightgrey: '#f2f2f2',
   },
 };
 
@@ -14,7 +14,7 @@ const darkTheme: DefaultTheme = {
     primaryblack: '#000000',
     primarywhite: '#ffffff',
     primarygrey: '#3940f9',
-    lightgrey: '#F2F2F2',
+    lightgrey: '#f2f2f2',
   },
 };
 
