@@ -7,7 +7,7 @@ interface ImageObjectProps {
   googleIcon: string;
 }
 
-type Prop = {registrationType: string};
+type Prop = {registrationType: string; onPress: () => void};
 
 const imageObject: ImageObjectProps = {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, global-require
@@ -16,7 +16,7 @@ const imageObject: ImageObjectProps = {
   googleIcon: require('./assets/googleIcon.png'),
 };
 
-const ButtonServiceAuth = ({registrationType}: Prop) => {
+const ButtonServiceAuth = ({registrationType, onPress}: Prop) => {
   let title: string;
   let flexImage: string;
   if (registrationType === 'Apple') {
@@ -26,9 +26,6 @@ const ButtonServiceAuth = ({registrationType}: Prop) => {
     title = 'Google';
     flexImage = imageObject.googleIcon;
   }
-  const onPress = () => {
-    console.log('button pressed');
-  };
   return (
     <S.Touch onPress={onPress}>
       <S.ImageIcon source={flexImage} />

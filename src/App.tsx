@@ -18,8 +18,8 @@ const App = () => {
         <Button title="Let's get started" color="grey" onPress={onPress} />
         <Button title="Let's get started" color="white" onPress={onPress} />
         <View style={{flexDirection: 'row'}}>
-          <ButtonServiceAuth registrationType="Apple" />
-          <ButtonServiceAuth registrationType="Google" />
+          <ButtonServiceAuth registrationType="Apple" onPress={onPress} />
+          <ButtonServiceAuth registrationType="Google" onPress={onPress} />
         </View>
       </ThemeProvider>
     </View>
