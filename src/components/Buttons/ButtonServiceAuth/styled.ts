@@ -11,7 +11,6 @@ export const Text = styled.Text`
 
 export const Touch = styled.TouchableOpacity`
   justify-content: space-evenly;
-  width: 48px;
   flex-direction: row;
   flex-basis: auto;
   flex-grow: 1;
@@ -21,6 +20,7 @@ export const Touch = styled.TouchableOpacity`
   margin: 0 20px;
   align-items: center;
 `;
+
 export const ImageIcon = styled.Image`
   width: 20px;
   height: 20px;
