@@ -1,10 +1,11 @@
-import ButtonBlack from './components/Buttons/ButtonBlack';
 import React from 'react';
-import {View, Text, useColorScheme} from 'react-native';
-import {lightTheme, darkTheme} from './theme';
+import {View, useColorScheme} from 'react-native';
 import {ThemeProvider} from 'styled-components';
+import ButtonBlack from './components/Buttons/ButtonBlack';
+import {lightTheme, darkTheme} from './theme';
 import ButtonGrey from './components/Buttons/ButtonGrey';
 import ButtonWhite from './components/Buttons/ButtonWhite';
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   return (

@@ -2,19 +2,19 @@ import {DefaultTheme} from 'styled-components';
 
 const lightTheme: DefaultTheme = {
   colors: {
-    primaryBlack: '#000000',
-    primaryWhite: '#ffffff',
-    primaryGrey: '#3940f9',
-    lightGrey: '#F2F2F2',
+    primaryblack: '#000000',
+    primarywhite: '#ffffff',
+    primarygrey: '#3940f9',
+    lightgrey: '#F2F2F2',
   },
 };
 
 const darkTheme: DefaultTheme = {
   colors: {
-    primaryBlack: '#000000',
-    primaryWhite: '#ffffff',
-    primaryGrey: '#3940f9',
-    lightGrey: '#F2F2F2',
+    primaryblack: '#000000',
+    primarywhite: '#ffffff',
+    primarygrey: '#3940f9',
+    lightgrey: '#F2F2F2',
   },
 };
 
