@@ -11,7 +11,6 @@ export const Text = styled.Text`
     if (variant === 'black' || variant === 'grey') return `${theme.colors.primarywhite}`;
     return `${theme.colors.primaryblack}`;
   }};
-  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;

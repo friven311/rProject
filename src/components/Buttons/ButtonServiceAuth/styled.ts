@@ -3,7 +3,6 @@ import styled from 'styled-components/native';
 export const Text = styled.Text`
   margin-right: 20px;
   color: ${({theme: {colors}}) => colors.primaryblack};
-  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
