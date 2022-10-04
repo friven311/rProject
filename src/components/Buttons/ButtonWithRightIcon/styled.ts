@@ -1,11 +1,7 @@
-import styled, {DefaultTheme} from 'styled-components/native';
-
-interface Props {
-  theme: DefaultTheme;
-}
+import styled from 'styled-components/native';
 
 export const Text = styled.Text`
-  color: ${({theme}: props) => `${theme.colors.primarywhite}`};
+  color: ${({theme}) => `${theme.colors.primarywhite}`};
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -18,7 +14,7 @@ export const Touch = styled.TouchableOpacity`
   flex-basis: auto;
   justify-content: flex-end;
   flex-grow: 1;
-  background: ${({theme}: props) => `${theme.colors.primaryblack}`};
+  background: ${({theme}) => `${theme.colors.primaryblack}`};
   border-radius: 20px;
   padding: 10px;
   margin: 0 20px;
