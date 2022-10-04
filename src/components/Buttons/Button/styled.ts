@@ -1,6 +1,6 @@
 import styled, {DefaultTheme} from 'styled-components/native';
 
-interface props {
+interface Props {
   variant: string;
   theme: DefaultTheme;
   disabled?: string;
