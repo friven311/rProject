@@ -1,37 +1,20 @@
 import React from 'react';
 
 import * as S from './styled';
+import appleIcon from '../../../../assets/images/ButtonIcons/ButtonAuthIcons/appleIcon.png';
+import googleIcon from '../../../../assets/images/ButtonIcons/ButtonAuthIcons/googleIcon.png';
 
-interface ImageObjectProps {
-  appleIcon: string;
-  googleIcon: string;
-}
+type Prop = {authenticationType: string; onPress: () => void; text: string};
 
-type Prop = {registrationType: string; onPress: () => void};
-
-const imageObject: ImageObjectProps = {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, global-require
-  appleIcon: require('./assets/appleIcon.png'),
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, global-require
-  googleIcon: require('./assets/googleIcon.png'),
-};
-
-const ButtonServiceAuth = ({registrationType, onPress}: Prop) => {
-  let title: string;
-  let flexImage: string;
-  if (registrationType === 'Apple') {
-    title = 'Apple';
-    flexImage = imageObject.appleIcon;
-  } else {
-    title = 'Google';
-    flexImage = imageObject.googleIcon;
-  }
-  return (
-    <S.Touch onPress={onPress}>
-      <S.ImageIcon source={flexImage} />
-      <S.Text>{title}</S.Text>
-    </S.Touch>
-  );
-};
+const ButtonServiceAuth = ({onPress, authenticationType, text}: Prop) => (
+  <S.Touch onPress={onPress}>
+    {authenticationType === 'Apple' ? (
+      <S.ImageIcon source={appleIcon} />
+    ) : (
+      <S.ImageIcon source={googleIcon} />
+    )}
+    <S.Text>{text}</S.Text>
+  </S.Touch>
+);
 
 export default ButtonServiceAuth;

@@ -1,8 +1,14 @@
-import styled from 'styled-components/native';
+import styled, {DefaultTheme} from 'styled-components/native';
+
+interface Props {
+  variant: string;
+  theme: DefaultTheme;
+  disabled?: string;
+}
 
 export const Text = styled.Text`
-  color: ${({color, theme}) => {
-    if (color === 'black' || color === 'grey') return `${theme.colors.primarywhite}`;
+  color: ${({variant, theme}: props) => {
+    if (variant === 'black' || variant === 'grey') return `${theme.colors.primarywhite}`;
     return `${theme.colors.primaryblack}`;
   }};
   font-family: Inter, sans-serif;
@@ -14,10 +20,20 @@ export const Text = styled.Text`
 export const Touch = styled.TouchableOpacity`
   flex-basis: auto;
   flex-grow: 1;
-  background: ${({color, theme}) => {
-    if (color === 'black') return `${theme.colors.primaryblack}`;
-    if (color === 'grey') return `${theme.colors.primarygrey}`;
-    if (color === 'white') return `${theme.colors.primarywhite}`;
+  background: ${({variant, theme, disabled}: props) => {
+    if (disabled) {
+      return `${theme.colors.primaryblackopacity}`;
+    }
+    if (variant === 'black') {
+      return `${theme.colors.primaryblack}`;
+    }
+    if (variant === 'lightGrey') {
+      return `${theme.colors.lightgrey}`;
+    }
+    if (variant === 'white') {
+      return `${theme.colors.primarywhite}`;
+    }
+
     return `${theme.colors.lightgrey}`;
   }};
   border-radius: 8px;

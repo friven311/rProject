@@ -14,12 +14,14 @@ const App = () => {
   return (
     <View>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-        <Button title="Let's get started" color="black" onPress={onPress} />
-        <Button title="Let's get started" color="grey" onPress={onPress} />
-        <Button title="Let's get started" color="white" onPress={onPress} />
+        {}
+        <Button text="Let's get started" variant="black" onPress={onPress} disabled={false} />
+        <Button text="Let's get started" variant="black" onPress={onPress} disabled />
+        <Button text="Let's get started" variant="lightGrey" onPress={onPress} disabled={false} />
+        <Button text="Let's get started" variant="white" onPress={onPress} disabled={false} />
         <View style={{flexDirection: 'row'}}>
-          <ButtonServiceAuth registrationType="Apple" onPress={onPress} />
-          <ButtonServiceAuth registrationType="Google" onPress={onPress} />
+          <ButtonServiceAuth text="Apple" authenticationType="Apple" onPress={onPress} />
+          <ButtonServiceAuth text="Goolge" authenticationType="Google" onPress={onPress} />
         </View>
       </ThemeProvider>
     </View>

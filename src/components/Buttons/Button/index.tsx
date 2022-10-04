@@ -3,14 +3,15 @@ import React from 'react';
 import * as S from './styled';
 
 interface Props {
-  title: string;
-  color: string;
+  text: string;
+  variant: string;
+  disabled: boolean;
   onPress: () => void;
 }
 
-const Button = ({title, color, onPress}: Props) => (
-  <S.Touch onPress={onPress} color={color}>
-    <S.Text color={color}>{title}</S.Text>
+const Button = ({text, variant, onPress, disabled}: Props) => (
+  <S.Touch onPress={onPress} variant={variant} disabled={disabled}>
+    <S.Text variant={variant}>{text}</S.Text>
   </S.Touch>
 );
 
