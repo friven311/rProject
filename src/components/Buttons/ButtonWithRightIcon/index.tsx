@@ -1,5 +1,4 @@
 import React from 'react';
-import {View} from 'react-native';
 
 import phone from '../../../../assets/images/ButtonIcons/ButtonWithRightIcon/phone.png';
 

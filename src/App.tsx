@@ -12,6 +12,7 @@ const App = () => {
   const onPress = () => {
     console.log('buttonPressed');
   };
+
   return (
     <View>
       <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
@@ -20,7 +21,7 @@ const App = () => {
         <Button text="Let's get started" variant="black" onPress={onPress} disabled />
         <Button text="Let's get started" variant="lightGrey" onPress={onPress} disabled={false} />
         <Button text="Let's get started" variant="white" onPress={onPress} disabled={false} />
-        <ButtonWithRightIcon text="Message" />
+        <ButtonWithRightIcon text="Message" onPress={onPress} />
         <View style={{flexDirection: 'row'}}>
           <ButtonServiceAuth text="Apple" authenticationType="Apple" onPress={onPress} />
           <ButtonServiceAuth text="Goolge" authenticationType="Google" onPress={onPress} />

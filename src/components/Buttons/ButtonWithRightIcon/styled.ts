@@ -1,9 +1,7 @@
 import styled, {DefaultTheme} from 'styled-components/native';
 
 interface Props {
-  variant: string;
   theme: DefaultTheme;
-  disabled?: string;
 }
 
 export const Text = styled.Text`

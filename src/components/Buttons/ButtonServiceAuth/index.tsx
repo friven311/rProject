@@ -1,6 +1,7 @@
 import React from 'react';
 
 import * as S from './styled';
+
 import appleIcon from '../../../../assets/images/ButtonIcons/ButtonAuthIcons/appleIcon.png';
 import googleIcon from '../../../../assets/images/ButtonIcons/ButtonAuthIcons/googleIcon.png';
 
