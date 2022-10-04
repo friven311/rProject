@@ -3,7 +3,8 @@ import {View, Text} from 'react-native';
 
 const App = () => (
   <View>
-    <Text>я начинаю подгорать, дай запушить пожалуйста</Text>
+    <Text>My number isttttt111</Text>
+    <Text>My numbertttt11111</Text>
   </View>
 );
 
