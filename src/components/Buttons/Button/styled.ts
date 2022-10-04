@@ -35,7 +35,7 @@ export const Touch = styled.TouchableOpacity`
 
     return `${theme.colors.lightgrey}`;
   }};
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 10px;
   margin: 0 20px;
   align-items: center;

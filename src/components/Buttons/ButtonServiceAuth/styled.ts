@@ -14,7 +14,7 @@ export const Touch = styled.TouchableOpacity`
   flex-basis: auto;
   flex-grow: 1;
   background: ${({theme: {colors}}) => colors.lightgrey};
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 10px;
   margin: 0 20px;
   align-items: center;
