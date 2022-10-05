@@ -5,6 +5,7 @@ import {ThemeProvider} from 'styled-components';
 import ButtonWithRightIcon from 'components/Buttons/ButtonWithRightIcon';
 import PointOfInterest from 'components/Buttons/PointOfInterest';
 import SocialButton from 'components/Buttons/SocialButtons';
+import AddPhotoButton from 'components/Buttons/AddPhotoButton';
 import Button from './components/Buttons/Button';
 import {lightTheme, darkTheme} from './theme';
 import ButtonServiceAuth from './components/Buttons/ButtonServiceAuth';
@@ -34,6 +35,11 @@ const App = () => {
           <PointOfInterest text="camping" pressed onPress={onPress} />
         </View>
         <SocialButton text="Instagram" onPress={onPress} />
+        <View style={{flexDirection: 'row'}}>
+          <AddPhotoButton onPress={onPress} />
+          <AddPhotoButton onPress={onPress} />
+          <AddPhotoButton onPress={onPress} />
+        </View>
       </ThemeProvider>
     </View>
   );
