@@ -4,6 +4,7 @@ import {ThemeProvider} from 'styled-components';
 
 import ButtonWithRightIcon from 'components/Buttons/ButtonWithRightIcon';
 import PointOfInterest from 'components/Buttons/PointOfInterest';
+import SocialButton from 'components/Buttons/SocialButtons';
 import Button from './components/Buttons/Button';
 import {lightTheme, darkTheme} from './theme';
 import ButtonServiceAuth from './components/Buttons/ButtonServiceAuth';
@@ -32,6 +33,7 @@ const App = () => {
           <PointOfInterest text="camping" pressed onPress={onPress} />
           <PointOfInterest text="camping" pressed onPress={onPress} />
         </View>
+        <SocialButton text="Instagram" onPress={onPress} />
       </ThemeProvider>
     </View>
   );

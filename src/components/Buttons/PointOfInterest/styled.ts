@@ -13,8 +13,8 @@ export const Text = styled.Text`
     }
     return `${theme.colors.primaryblack}`;
   }};
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 20px;
   margin-right: 10px;
 `;

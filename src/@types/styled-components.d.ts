@@ -9,7 +9,7 @@ declare module 'styled-components' {
       lightgrey: string;
       primaryblackopacity: string;
     };
-  }; // FIXME: Add theme object here
+  };
 
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   export interface DefaultTheme extends Theme {}
