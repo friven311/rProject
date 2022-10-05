@@ -6,6 +6,7 @@ import ButtonWithRightIcon from 'components/Buttons/ButtonWithRightIcon';
 import PointOfInterest from 'components/Buttons/PointOfInterest';
 import SocialButton from 'components/Buttons/SocialButtons';
 import AddPhotoButton from 'components/Buttons/AddPhotoButton';
+import CustomInput from 'components/TextInput/Index';
 import Button from './components/Buttons/Button';
 import {lightTheme, darkTheme} from './theme';
 import ButtonServiceAuth from './components/Buttons/ButtonServiceAuth';
@@ -40,6 +41,7 @@ const App = () => {
           <AddPhotoButton onPress={onPress} />
           <AddPhotoButton onPress={onPress} />
         </View>
+        <CustomInput placeholder="Email or phone" />
       </ThemeProvider>
     </View>
   );
