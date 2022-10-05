@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Image} from 'react-native';
 
 import cycling from '../../../../assets/images/pointsOfInterests/camping.png';
 

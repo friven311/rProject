@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {View, useColorScheme} from 'react-native';
 import {ThemeProvider} from 'styled-components';
 
