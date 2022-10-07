@@ -8,7 +8,9 @@ interface Props {
 
 export const Text = styled.Text`
   color: ${({variant, theme}: props) => {
-    if (variant === 'black' || variant === 'grey') return `${theme.colors.primarywhite}`;
+    if (variant === 'black' || variant === 'grey') {
+      return `${theme.colors.primarywhite}`;
+    }
     return `${theme.colors.primaryblack}`;
   }};
   font-weight: 600;
