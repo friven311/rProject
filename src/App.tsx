@@ -31,9 +31,9 @@ const App = () => {
           <ButtonServiceAuth text="Goolge" authenticationType="Google" onPress={onPress} />
         </View>
         <View style={{flexDirection: 'row'}}>
-          <PointOfInterest text="camping" pressed onPress={onPress} />
-          <PointOfInterest text="camping" pressed onPress={onPress} />
-          <PointOfInterest text="camping" pressed onPress={onPress} />
+          <PointOfInterest text="camping" />
+          <PointOfInterest text="camping" />
+          <PointOfInterest text="camping" />
         </View>
         <SocialButton text="Instagram" onPress={onPress} />
         <View style={{flexDirection: 'row'}}>

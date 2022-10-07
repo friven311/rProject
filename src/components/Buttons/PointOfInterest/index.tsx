@@ -6,17 +6,15 @@ import * as S from './styled';
 
 interface Props {
   text: string;
-  pressed: boolean;
-  onPress: () => void;
 }
 
-const PointOfInterest = ({text, onPress}: Props) => {
+const PointOfInterest = ({text}: Props) => {
   const [press, setPress] = useState(false);
-  const onPresse = () => {
+  const onPress = () => {
     setPress(!press);
   };
   return (
-    <S.Touch onPress={onPresse} pressed={press} activeOpacity={1}>
+    <S.Touch onPress={onPress} pressed={press} activeOpacity={1}>
       <S.InterestIcon source={cycling} />
       <S.Text pressed={press}>{text}</S.Text>
     </S.Touch>
