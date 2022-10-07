@@ -22,3 +22,8 @@ export const InterestIcon = styled.Image`
   height: 40px;
   margin: 0 10px;
 `;
+
+export const VectorIcon = styled.Image`
+  width: 5px;
+  height: 10px;
+`;
