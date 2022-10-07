@@ -1,10 +1,10 @@
 import styled, {DefaultTheme} from 'styled-components/native';
 
-type Props = {
+interface Props {
   theme: DefaultTheme;
   disabled?: string;
   pressed?: boolean;
-};
+}
 
 export const Text = styled.Text`
   color: ${({theme, pressed}: props) => {

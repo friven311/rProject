@@ -1,10 +1,10 @@
 import styled, {DefaultTheme} from 'styled-components/native';
 
-type Props = {
+interface Props {
   variant: string;
   theme: DefaultTheme;
   disabled?: string;
-};
+}
 
 export const Text = styled.Text`
   color: ${({variant, theme}: props) => {
