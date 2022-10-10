@@ -17,13 +17,8 @@ export const Text = styled.Text`
 
 export const Touch = styled.TouchableOpacity`
   flex-direction: row;
-  background: ${({theme, pressed}: Props) => {
-    if (pressed) {
-      return `${theme.colors.primaryblack}`;
-    }
-
-    return `${theme.colors.lightgrey}`;
-  }};
+  background: ${({theme, pressed}: Props) =>
+    pressed ? `${theme.colors.primaryblack}` : `${theme.colors.primarywhite}`};
   border-radius: 50px;
   padding: 10px;
   align-items: center;
