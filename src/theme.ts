@@ -1,6 +1,4 @@
-import {DefaultTheme} from 'styled-components';
-
-const lightTheme: DefaultTheme = {
+const lightTheme = {
   colors: {
     primaryblackopacity: 'rgba(0,0,0,0.31)',
     primaryblack: '#000000',
@@ -10,7 +8,7 @@ const lightTheme: DefaultTheme = {
   },
 };
 
-const darkTheme: DefaultTheme = {
+const darkTheme = {
   colors: {
     primaryblackopacity: 'rgba(0,0,0,0.31)',
     primaryblack: '#000000',
