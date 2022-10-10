@@ -23,17 +23,16 @@ export const Container = styled.TouchableOpacity`
     if (disabled) {
       return `${theme.colors.primaryblackopacity}`;
     }
-    if (variant === 'black') {
-      return `${theme.colors.primaryblack}`;
+    switch (variant) {
+      case 'black':
+        return `${theme.colors.primaryblack}`;
+      case 'lightGrey':
+        return `${theme.colors.lightgrey}`;
+      case 'white':
+        return `${theme.colors.primarywhite}`;
+      default:
+        return `${theme.colors.lightgrey}`;
     }
-    if (variant === 'lightGrey') {
-      return `${theme.colors.lightgrey}`;
-    }
-    if (variant === 'white') {
-      return `${theme.colors.primarywhite}`;
-    }
-
-    return `${theme.colors.lightgrey}`;
   }};
   border-radius: 15px;
   padding: 10px;
