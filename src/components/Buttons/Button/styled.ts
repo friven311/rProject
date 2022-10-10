@@ -3,7 +3,7 @@ import styled, {DefaultTheme} from 'styled-components/native';
 interface Props {
   variant: string;
   theme: DefaultTheme;
-  disabled?: string;
+  disabled: boolean;
 }
 
 export const Text = styled.Text`
@@ -19,10 +19,7 @@ export const Text = styled.Text`
 export const Container = styled.TouchableOpacity`
   flex-basis: auto;
   flex-grow: 1;
-  background: ${({variant, theme, disabled}: Props) => {
-    if (disabled) {
-      return `${theme.colors.primaryblackopacity}`;
-    }
+  background: ${({variant, theme}: Props) => {
     switch (variant) {
       case 'black':
         return `${theme.colors.primaryblack}`;
@@ -38,4 +35,5 @@ export const Container = styled.TouchableOpacity`
   padding: 10px;
   margin: 0 20px;
   align-items: center;
+  opacity: ${({disabled}) => (disabled ? 0.3 : 1)};
 `;
