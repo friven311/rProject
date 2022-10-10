@@ -7,10 +7,8 @@ interface Props {
 }
 
 export const Text = styled.Text`
-  color: ${({variant, theme}: props) => {
-    if (variant === 'black' || variant === 'grey') {
-      return `${theme.colors.primarywhite}`;
-    }
+  color: ${({variant, theme}: Props) => {
+    if (variant === 'black' || variant === 'grey') return `${theme.colors.primarywhite}`;
     return `${theme.colors.primaryblack}`;
   }};
   font-weight: 600;
@@ -21,7 +19,7 @@ export const Text = styled.Text`
 export const Touch = styled.TouchableOpacity`
   flex-basis: auto;
   flex-grow: 1;
-  background: ${({variant, theme, disabled}: props) => {
+  background: ${({variant, theme, disabled}: Props) => {
     if (disabled) {
       return `${theme.colors.primaryblackopacity}`;
     }

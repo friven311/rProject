@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const Text = styled.Text`
-  color: ${({theme, pressed}: props) => {
+  color: ${({theme, pressed}: Props) => {
     if (pressed) {
       return `${theme.colors.primarywhite}`;
     }
@@ -21,7 +21,7 @@ export const Text = styled.Text`
 
 export const Touch = styled.TouchableOpacity`
   flex-direction: row;
-  background: ${({theme, pressed}: props) => {
+  background: ${({theme, pressed}: Props) => {
     if (pressed) {
       return `${theme.colors.primaryblack}`;
     }
