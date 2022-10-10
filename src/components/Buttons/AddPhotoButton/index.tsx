@@ -10,7 +10,7 @@ interface Props {
 
 const AddPhotoButton = ({onPress}: Props) => (
   <S.Container onPress={onPress}>
-    <S.InterestIcon source={pluse} />
+    <S.Icon source={pluse} />
   </S.Container>
 );
 

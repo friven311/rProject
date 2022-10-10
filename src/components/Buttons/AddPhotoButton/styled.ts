@@ -13,7 +13,7 @@ export const Container = styled.TouchableOpacity`
   margin: 15px;
 `;
 
-export const InterestIcon = styled.Image`
+export const Icon = styled.Image`
   width: 24px;
   height: 24px;
 `;
