@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Svg, {Rect, Path, Defs, LinearGradient, Stop} from 'react-native-svg';
 
-const InstagramIcon = () => (
+const Instagram = () => (
   <Svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <Rect x={7.5} y={8.75} width={25} height={23.75} fill="url(#paint0_linear_745_15918)" />
     <Path
@@ -39,4 +39,4 @@ const InstagramIcon = () => (
   </Svg>
 );
 
-export default InstagramIcon;
+export default Instagram;
