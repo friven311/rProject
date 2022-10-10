@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Svg, {Rect, Defs, Pattern, Use, Image} from 'react-native-svg';
 
-const CampingIcon = () => (
+const Camping = () => (
   <Svg
     width={24}
     height={24}
@@ -25,4 +25,4 @@ const CampingIcon = () => (
   </Svg>
 );
 
-export default CampingIcon;
+export default Camping;

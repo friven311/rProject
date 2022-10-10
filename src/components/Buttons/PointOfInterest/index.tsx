@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import CampingIcon from 'assets/icons/CampingIcon';
+import Camping from 'assets/icons/Camping';
 
 import * as S from './styled';
 
@@ -15,7 +15,7 @@ const PointOfInterest = ({text}: Props) => {
   };
   return (
     <S.Container onPress={onPress} pressed={isPressed} activeOpacity={1}>
-      <CampingIcon />
+      <Camping />
       <S.Text pressed={isPressed}>{text}</S.Text>
     </S.Container>
   );
