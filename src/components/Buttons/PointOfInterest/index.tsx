@@ -9,14 +9,14 @@ interface Props {
 }
 
 const PointOfInterest = ({text}: Props) => {
-  const [press, setPress] = useState(false);
+  const [isPressed, setisPressed] = useState(false);
   const onPress = () => {
-    setPress(prevState => !prevState);
+    setisPressed(prevState => !prevState);
   };
   return (
-    <S.Container onPress={onPress} pressed={press} activeOpacity={1}>
+    <S.Container onPress={onPress} pressed={isPressed} activeOpacity={1}>
       <S.InterestIcon source={cycling} />
-      <S.Text pressed={press}>{text}</S.Text>
+      <S.Text pressed={isPressed}>{text}</S.Text>
     </S.Container>
   );
 };
