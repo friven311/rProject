@@ -4,7 +4,11 @@ import appleIcon from 'assets/icons/appleIcon.png';
 import googleIcon from 'assets/icons/googleIcon.png';
 import * as S from './styled';
 
-type Props = {authenticationType: string; onPress: () => void; text: string};
+interface Props {
+  authenticationType: string;
+  onPress: () => void;
+  text: string;
+}
 
 const ButtonServiceAuth = ({onPress, authenticationType, text}: Props) => (
   <S.Touch onPress={onPress}>
