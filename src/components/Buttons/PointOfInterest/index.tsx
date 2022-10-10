@@ -11,7 +11,7 @@ interface Props {
 const PointOfInterest = ({text}: Props) => {
   const [press, setPress] = useState(false);
   const onPress = () => {
-    setPress(!press);
+    setPress(prevState => !prevState);
   };
   return (
     <S.Touch onPress={onPress} pressed={press} activeOpacity={1}>
