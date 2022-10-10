@@ -1,13 +1,17 @@
 import styled, {DefaultTheme} from 'styled-components/native';
 
-interface Props {
+interface PropsText {
   theme: DefaultTheme;
-  disabled?: string;
-  pressed?: boolean;
+  pressed: boolean;
+}
+
+interface PropsContainer {
+  theme: DefaultTheme;
+  pressed: boolean;
 }
 
 export const Text = styled.Text`
-  color: ${({theme, pressed}: Props) =>
+  color: ${({theme, pressed}: PropsText) =>
     pressed ? `${theme.colors.primarywhite}` : `${theme.colors.primaryblack}`};
   font-weight: 400;
   font-size: 14px;
@@ -15,9 +19,9 @@ export const Text = styled.Text`
   margin-right: 10px;
 `;
 
-export const Touch = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity`
   flex-direction: row;
-  background: ${({theme, pressed}: Props) =>
+  background: ${({theme, pressed}: PropsContainer) =>
     pressed ? `${theme.colors.primaryblack}` : `${theme.colors.primarywhite}`};
   border-radius: 50px;
   padding: 10px;

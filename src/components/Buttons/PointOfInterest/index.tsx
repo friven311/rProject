@@ -14,10 +14,10 @@ const PointOfInterest = ({text}: Props) => {
     setPress(prevState => !prevState);
   };
   return (
-    <S.Touch onPress={onPress} pressed={press} activeOpacity={1}>
+    <S.Container onPress={onPress} pressed={press} activeOpacity={1}>
       <S.InterestIcon source={cycling} />
       <S.Text pressed={press}>{text}</S.Text>
-    </S.Touch>
+    </S.Container>
   );
 };
 
