@@ -1,9 +1,8 @@
 import React from 'react';
 
+import appleIcon from 'assets/icons/appleIcon.png';
+import googleIcon from 'assets/icons/googleIcon.png';
 import * as S from './styled';
-
-import appleIcon from '../../../assets/icons/appleIcon.png';
-import googleIcon from '../../../assets/icons/googleIcon.png';
 
 type Props = {authenticationType: string; onPress: () => void; text: string};
 

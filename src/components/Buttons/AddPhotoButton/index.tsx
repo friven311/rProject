@@ -1,6 +1,6 @@
 import React from 'react';
 
-import pluse from '../../../assets/icons/pluse.png';
+import pluse from 'assets/icons/pluse.png';
 
 import * as S from './styled';
 
