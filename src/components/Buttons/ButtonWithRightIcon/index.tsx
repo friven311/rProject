@@ -1,6 +1,5 @@
 import React from 'react';
-
-import phone from 'assets/icons/phone.png';
+import PhoneIcon from 'assets/icons/PhoneIcon';
 
 import * as S from './styled';
 
@@ -14,7 +13,7 @@ const ButtonWithRightIcon = ({text, onPress}: Props) => (
     <S.Text>{text}</S.Text>
     <S.IconSeparatorWrapper>
       <S.Separator />
-      <S.ImageIcon source={phone} />
+      <PhoneIcon />
     </S.IconSeparatorWrapper>
   </S.Touch>
 );

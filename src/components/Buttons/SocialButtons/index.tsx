@@ -1,7 +1,7 @@
 import React from 'react';
 
-import instagram from 'assets/icons/instagram.png';
-import vector from 'assets/icons/Vector.png';
+import Instagram from 'assets/icons/Instagram';
+import Vector from 'assets/icons/Vector';
 
 import * as S from './styled';
 
@@ -12,9 +12,9 @@ interface Props {
 
 const SocialButton = ({text, onPress}: Props) => (
   <S.Touch onPress={onPress}>
-    <S.InterestIcon source={instagram} />
+    <Instagram />
     <S.Text>{text}</S.Text>
-    <S.VectorIcon source={vector} />
+    <Vector />
   </S.Touch>
 );
 

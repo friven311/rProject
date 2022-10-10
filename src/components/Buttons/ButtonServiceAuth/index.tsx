@@ -1,7 +1,7 @@
 import React from 'react';
 
-import appleIcon from 'assets/icons/appleIcon.png';
-import googleIcon from 'assets/icons/googleIcon.png';
+import AppleIcon from 'assets/icons/AppleIcon';
+import GoogleIcon from 'assets/icons/GoogleIcon';
 import * as S from './styled';
 
 interface Props {
@@ -12,11 +12,7 @@ interface Props {
 
 const ButtonServiceAuth = ({onPress, authenticationType, text}: Props) => (
   <S.Touch onPress={onPress}>
-    {authenticationType === 'Apple' ? (
-      <S.ImageIcon source={appleIcon} />
-    ) : (
-      <S.ImageIcon source={googleIcon} />
-    )}
+    {authenticationType === 'Apple' ? <AppleIcon /> : <GoogleIcon />}
     <S.Text>{text}</S.Text>
   </S.Touch>
 );

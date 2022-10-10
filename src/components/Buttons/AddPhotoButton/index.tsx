@@ -1,6 +1,6 @@
 import React from 'react';
 
-import pluse from 'assets/icons/pluse.png';
+import Pluss from 'assets/icons/Pluss';
 
 import * as S from './styled';
 
@@ -10,7 +10,7 @@ interface Props {
 
 const AddPhotoButton = ({onPress}: Props) => (
   <S.Container onPress={onPress}>
-    <S.Icon source={pluse} />
+    <Pluss />
   </S.Container>
 );
 

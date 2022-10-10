@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import cycling from 'assets/icons/camping.png';
+import CampingIcon from 'assets/icons/CampingIcon';
 
 import * as S from './styled';
 
@@ -9,13 +9,13 @@ interface Props {
 }
 
 const PointOfInterest = ({text}: Props) => {
-  const [isPressed, setisPressed] = useState(false);
+  const [isPressed, setIsPressed] = useState(false);
   const onPress = () => {
-    setisPressed(prevState => !prevState);
+    setIsPressed(prevState => !prevState);
   };
   return (
     <S.Container onPress={onPress} pressed={isPressed} activeOpacity={1}>
-      <S.InterestIcon source={cycling} />
+      <CampingIcon />
       <S.Text pressed={isPressed}>{text}</S.Text>
     </S.Container>
   );
