@@ -1,7 +1,7 @@
 import React from 'react';
 
-import instagram from '../../../../assets/images/social/instagram.png';
-import vector from '../../../../assets/images/common/Vector.png';
+import instagram from '../../../assets/icons/instagram.png';
+import vector from '../../../assets/icons/Vector.png';
 
 import * as S from './styled';
 

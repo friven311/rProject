@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import cycling from '../../../../assets/images/pointsOfInterests/camping.png';
+import cycling from '../../../assets/icons/camping.png';
 
 import * as S from './styled';
 

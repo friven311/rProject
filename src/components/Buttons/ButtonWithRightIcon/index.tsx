@@ -1,6 +1,6 @@
 import React from 'react';
 
-import phone from '../../../../assets/images/ButtonIcons/ButtonWithRightIcon/phone.png';
+import phone from '../../../assets/icons/phone.png';
 
 import * as S from './styled';
 
