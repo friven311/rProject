@@ -4,9 +4,9 @@ import pluse from '../../../../assets/images/common/pluse.png';
 
 import * as S from './styled';
 
-interface Props {
+type Props = {
   onPress: () => void;
-}
+};
 
 const AddPhotoButton = ({onPress}: Props) => (
   <S.Container onPress={onPress}>

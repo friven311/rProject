@@ -1,13 +1,19 @@
 import styled, {DefaultTheme} from 'styled-components/native';
 
-interface Props {
+interface PropsText {
   variant: string;
   theme: DefaultTheme;
   disabled: boolean;
 }
 
-export const Text = styled.Text`
-  color: ${({variant, theme}: Props) => {
+interface PropsContainer {
+  variant: string;
+  theme: DefaultTheme;
+  disabled: boolean;
+}
+
+export const Text = styled.Text<PropsText>`
+  color: ${({variant, theme}) => {
     switch (variant) {
       case 'black' || 'grey':
         return `${theme.colors.primarywhite}`;
@@ -20,10 +26,10 @@ export const Text = styled.Text`
   line-height: 20px;
 `;
 
-export const Container = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity<PropsContainer>`
   flex-basis: auto;
   flex-grow: 1;
-  background: ${({variant, theme}: Props) => {
+  background: ${({variant, theme}) => {
     switch (variant) {
       case 'black':
         return `${theme.colors.primaryblack}`;
