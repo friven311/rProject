@@ -1,13 +1,13 @@
 import styled, {DefaultTheme} from 'styled-components/native';
 
 interface PropsText {
-  variant: string;
+  variant: 'black' | 'grey' | 'lightGrey' | 'white';
   theme: DefaultTheme;
   disabled: boolean;
 }
 
 interface PropsContainer {
-  variant: string;
+  variant: 'black' | 'grey' | 'lightGrey' | 'white';
   theme: DefaultTheme;
   disabled: boolean;
 }

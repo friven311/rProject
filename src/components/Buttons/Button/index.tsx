@@ -4,7 +4,7 @@ import * as S from './styled';
 
 interface Props {
   text: string;
-  variant: string;
+  variant: 'black' | 'grey' | 'lightGrey' | 'white';
   disabled: boolean;
   onPress: () => void;
 }
