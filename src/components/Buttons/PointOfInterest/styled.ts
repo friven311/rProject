@@ -7,12 +7,8 @@ interface Props {
 }
 
 export const Text = styled.Text`
-  color: ${({theme, pressed}: Props) => {
-    if (pressed) {
-      return `${theme.colors.primarywhite}`;
-    }
-    return `${theme.colors.primaryblack}`;
-  }};
+  color: ${({theme, pressed}: Props) =>
+    pressed ? `${theme.colors.primarywhite}` : `${theme.colors.primaryblack}`};
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
