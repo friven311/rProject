@@ -4,6 +4,7 @@ const lightTheme = {
     primarywhite: '#ffffff',
     primarygrey: '#808080',
     lightgrey: '#f2f2f2',
+    borderColor: '#e6e6e6',
   },
 };
 
@@ -13,6 +14,7 @@ const darkTheme = {
     primarywhite: '#ffffff',
     primarygrey: '#808080',
     lightgrey: '#f2f2f2',
+    borderColor: '#e6e6e6',
   },
 };
 
