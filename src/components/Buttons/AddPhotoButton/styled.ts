@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Touch = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity`
   width: 100px;
   height: 150px;
   justify-content: center;

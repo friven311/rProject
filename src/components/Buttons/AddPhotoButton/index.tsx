@@ -9,9 +9,9 @@ interface Props {
 }
 
 const AddPhotoButton = ({onPress}: Props) => (
-  <S.Touch onPress={onPress}>
+  <S.Container onPress={onPress}>
     <S.InterestIcon source={pluse} />
-  </S.Touch>
+  </S.Container>
 );
 
 export default AddPhotoButton;

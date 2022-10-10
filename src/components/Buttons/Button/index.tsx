@@ -10,9 +10,9 @@ interface Props {
 }
 
 const Button = ({text, variant, onPress, disabled}: Props) => (
-  <S.Touch onPress={onPress} variant={variant} disabled={disabled}>
+  <S.Container onPress={onPress} variant={variant} disabled={disabled}>
     <S.Text variant={variant}>{text}</S.Text>
-  </S.Touch>
+  </S.Container>
 );
 
 export default Button;

@@ -16,7 +16,7 @@ export const Text = styled.Text`
   line-height: 20px;
 `;
 
-export const Touch = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity`
   flex-basis: auto;
   flex-grow: 1;
   background: ${({variant, theme, disabled}: Props) => {
