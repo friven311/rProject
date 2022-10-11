@@ -8,7 +8,8 @@ import SocialButton from 'components/Buttons/SocialButtons';
 import AddPhotoButton from 'components/Buttons/AddPhotoButton';
 import CustomInput from 'components/TextInput/Index';
 import Button from './components/Buttons/Button';
-import {lightTheme, darkTheme} from './theme';
+import lightTheme from './theme/lightTheme';
+import darkTheme from './theme/darkTheme';
 import ButtonServiceAuth from './components/Buttons/ButtonServiceAuth';
 
 const App = () => {
