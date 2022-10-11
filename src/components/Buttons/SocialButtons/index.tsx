@@ -1,5 +1,4 @@
-import React from 'react';
-
+/* eslint-disable react/react-in-jsx-scope */
 import Instagram from 'assets/icons/Instagram';
 import Vector from 'assets/icons/Vector';
 
