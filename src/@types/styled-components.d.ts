@@ -1,7 +1,9 @@
-import 'styled-components/native';
+import 'styled-components';
 
-declare module 'styled-components/native' {
-  type Theme = Record<string, string>; // FIXME: Add theme object here
+import lightTheme from '../theme/lightTheme';
+
+declare module 'styled-components' {
+  type Theme = typeof lightTheme;
 
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   export interface DefaultTheme extends Theme {}

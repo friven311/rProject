@@ -8,6 +8,12 @@
   ],
   "rules": {
     "color-hex-length": "long",
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "ignoreShorthands": ["border-bottom", "border-left", "border-right", "border-top"]
+      }
+    ],
     "function-no-unknown": [true, {"ignoreFunctions": ["/$/"]}],
     "property-no-unknown": [
       true,
@@ -30,11 +36,6 @@
         ]
       }
     ],
-    "declaration-block-no-redundant-longhand-properties": [
-      true,
-      {
-        "ignoreShorthands": ["border-bottom", "border-left", "border-right", "border-top"]
-      }
-    ]
+    "value-keyword-case": null
   }
 }
